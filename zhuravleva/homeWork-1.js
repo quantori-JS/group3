@@ -13,6 +13,7 @@ function swap(items, firstInd, secondInd) {
     items[secondInd] = temp;
 
 }
+
 // Task 2. Quick Sort
 function partition(items, l, r) {
     const pivot = items[Math.floor((l + r) / 2)];
