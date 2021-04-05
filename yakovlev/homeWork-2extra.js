@@ -19,7 +19,7 @@ function checker(limit, rulettes) {
 	for (const arr of rulettes) {
 		i++;
 		const obj = counter(arr);
-		const word = Object.keys(obj).find(key => obj[key] === 10);
+		const word = Object.keys(obj).find(key => obj[key] === limit);
 		if (word !== undefined) {
 			return [false, i, word];
 		}
